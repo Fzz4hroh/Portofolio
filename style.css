@@ -1,0 +1,442 @@
+<!-- Linking Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+
+
+<style>
+</style>
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.wrapper {
+    width: 1024px;
+    margin: auto;
+    padding: 17px 0;
+}
+
+nav {
+    background: linear-gradient(to right, #ff9c08, #02024b); /* Gradient background */
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav > 
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 0;
+}
+
+.menu ul li {
+    margin-left: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.menu ul li a:hover {
+    color: #00adb5;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    max-height: 100%;
+    width: auto;
+}
+
+/* Hero / Jumbotron */
+header {
+    background: url("../images/bg-header.png") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.header-jumbotron {
+    position: absolute;
+    top: 60%;
+    left: 50px;
+    transform: translateY(-50%);
+    text-align: left;
+}
+
+.header-jumbotron > h4,
+.header-jumbotron > h5,
+.header-jumbotron > p {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.header-jumbotron > h4 {
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 4px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffa527;
+    text-shadow: 0 0 4px #000;
+}
+
+.header-jumbotron > h5 {
+    font-family: 'Kanit', sans-serif;
+    color: #f9f9f9;
+    font-size: 60px;
+    line-height: 65px;
+    text-shadow: 0 0 4px #000;
+}
+
+.header-jumbotron > p {
+    font-family: 'Kanit', sans-serif;
+    color: #FFF;
+    text-shadow: 0 0 4px #000;
+}
+
+.button {
+    font-family: 'Kanit', sans-serif;
+    background-color: #ffa527;
+    font-size: 30px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Tentang Section */
+#tentang {
+    background: url("images/bg-tentang.png") no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 70px 0;
+    min-height: 90vh;
+}
+#tentang .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 30px;
+    margin-left: 20px; /* Menambahkan margin ke kiri */
+    margin-top: -50px; /* Menggeser elemen lebih ke atas */
+}
+
+.tentang-content {
+    position: relative;
+    max-width: 700px;
+    text-align: left;
+    margin: 0; /* Menghapus margin default */
+    transform: translateY(-50px); /* Menggeser konten lebih ke atas */
+}
+
+.tentang-content h2 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: #ffa527;
+}
+
+.tentang-content p {
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    color: #f9f9f9;
+    line-height: 1.6;
+    text-align: left;
+    margin-left: 10px; /* Menggeser teks lebih ke kiri */
+}
+
+</style>
+
+<div id="tentang">
+    <div class="wrapper">
+        <div class="tentang-content">
+            <h2>Tentang Saya</h2>
+            <p>Saya adalah Fatimatuz Zahroh, Mahasiswa Semester 3 yang pada saat ini sedang menempuh pendidikan di salah satu universitas Surabaya yakni Universitas 17 Agustus 1945 Surabaya dengan jurusan Teknik Informatika.</p>
+        </div>
+    </div>
+</div>
+/* Portofolio Section */
+#portofolio {
+    background: url("../images/bg-portofolio.png") no-repeat center center; 
+    background-size : center;
+    color: #fff;
+    padding: 70px 0;
+    min-height: 90vh;
+}
+
+#portofolio h2 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #181a45;
+    margin-bottom: 20px;
+}
+
+#portofolio p {
+    font-family: 'Kanit', sans-serif;
+    font-size: 12px;
+    color: #000000;
+}
+
+/* Grid Container */
+.portofolio-grid {
+    font-family: 'Kanit', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    gap: 15px;
+}
+
+/* Portofolio Item */
+.portofolio-item {
+    font-family: 'Kanit', sans-serif;
+    background-color: #fcf4c6;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.1s ease;
+}
+
+.portofolio-item:hover {
+    font-family: 'Kanit', sans-serif;
+    transform: translateY(-10px);
+}
+
+.portofolio-item img {
+    font-family: 'Kanit', sans-serif;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.portofolio-item h3 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #730707;
+    margin: 10px 0;
+}
+
+.portofolio-item p {
+    font-family: 'Kanit', sans-serif;
+    font-size: 14px;
+    color: #2f59ff;
+    padding: 0 10px 15px;
+}
+
+/* Blog Section */
+#blog {
+    text-align: center;
+    background: url('bg-portofolio.png') no-repeat center top;
+    background-size: cover;
+    padding: 10px 0; /* Tambahkan padding untuk memberi ruang */
+}
+
+#blog h2 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.blog-slider {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 20px 0;
+}
+
+.blog-item {
+    flex: 0 0 300px;
+    background-color: rgba(255, 255, 255, 0.091);
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 3px 6px rgba(255, 255, 255, 0.1);
+    scroll-snap-align: center;
+    padding: 10px;
+}
+
+.blog-item img {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.blog-item h3 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.blog-item p {
+    font-family: 'Kanit', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+
+
+
+
+.contact-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Jarak antar ikon */
+    margin-top: 20px; /* Spasi di atas ikon */
+}
+
+.contact-icons a img {
+    width: 60px; /* Ukuran gambar ikon */
+    height: 60px; /* Tinggi gambar ikon */
+    border-radius: 50%; /* Membuat ikon bulat, jika ingin */
+    transition: transform 0.3s ease; /* Animasi saat hover */
+}
+
+.contact-icons a img:hover {
+    transform: scale(1.1); /* Perbesar ikon saat hover */
+}
+
+.contact-text {
+    font-size: 16px;
+    color: #333; /* Warna teks */
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Jarak antara ikon dan teks */
+} 
+
+
+/* Wrapper untuk form */
+.contact-form {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9af00; /* Warna latar belakang form */
+    background-image: url('../images/bg-contact.png');
+    background-size: cover; /* Mengatur ukuran gambar agar menutupi area */
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+    background-position: center; /* Posisikan gambar di tengah */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(91, 54, 0, 0.808);
+}
+
+
+/* Judul form */
+.contact-form h3 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #000000;
+}
+
+/* Grup form */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+/* Label */
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000000;
+}
+
+/* Input dan textarea */
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #d3940c;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+/* Fokus input dan textarea */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #66afe9;
+    outline: none;
+}
+
+/* Tombol submit */
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #142145; /* Warna tombol */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #89c8cf;
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 600px) {
+    .contact-form {
+        padding: 15px;
+    }
+
+    .contact-form h3 {
+        font-size: 1.3em;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+}
+/* Gambar WA yang mengambang */
+.floating-wa {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 60px;  /* Ukuran gambar */
+    animation: floatAnimation 3s ease-in-out infinite; /* Animasi mengambang */
+}
+
+/* Animasi mengambang */
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
